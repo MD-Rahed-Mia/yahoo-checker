@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yahoo mail checker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav>
+    <div class="topbar">
+      <div class="logo">
+        <img src="images/logo.png" alt="logo">
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Resource</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </div>
+      <div class="user_select">
+        <button>Log in</button>
+        <button>Register</button>
+      </div>
+    </div>
+
+    <!------------------  --------------->
+    <h1>Yahoo Email Checker</h1>
+    <!------------------  --------------->
+    <div class="email_checker_form">
+      <p>Enter your email for check details. Check user details is another level of safety for your company. Go ahead give a shot.</p>
+      <form action="" id="mail_form">
+        <input type="email" name="email" id="checkEmail" placeholder="johndoe@gmail.com">
+        <button type="submit">Varify</button>
+      </form>
+      <form action="" class="file_form">
+        <div>
+          <img src="images/file_upload_icon.png" alt="input">
+          <label for="file">Upload file for bulk test</label>
+          <label for="file">File type .txt,.doc,.docx,.pdf,.odt,.rtf,.html,.css</label>
+        </div>
+        <input type="file" name="file" id="file" accept=".txt,.doc,.docx,.pdf,.odt,.rtf,.html,.css">
+      </form>
+    </div>
+  </nav>
+
+  <div class="result_box">
+    <div class="result_box_heading">
+        <div class="select_view">
+          <select name="type" id="type">
+            <option value="" selected>Select view</option>
+            <option value="">All</option>
+            <option value="">Good</option>
+            <option value="">Bad</option>
+            <option value="">Not Exist</option>
+            <option value="">Wrong Format</option>
+            <option value="">Varify</option>
+            <option value="">Disable</option>
+            <option value="">Unknown</option>
+          </select>
+          <div class="download_btn">
+            <button>Download</button>
+            <button>Copy</button>
+          </div>
+        </div>
+        <div class="result_overview">
+          <div class="good">
+            <p>Good</p><span>0</span>
+          </div>
+          <div class="good">
+            <p>Varify</p><span>0</span>
+          </div>
+          <div class="good">
+            <p>Disable</p><span>0</span>
+          </div>
+          <div class="good">
+            <p>Not Exist</p><span>0</span>
+          </div>
+          <div class="good">
+            <p>Unknown</p><span>0</span>
+          </div>
+          <div class="good">
+            <p>Wrong Format</p><span>0</span>
+          </div>
+        </div>
+    </div>
+      <table class="checked_detials">
+
+        <thead>
+        <tr>
+          <th>Mail Address</th>
+          <th>Format</th>
+          <th>Type</th>
+          <th>Server Status</th>
+          <th>Email Status</th>
+          <th>DNS Record Validation</th>
+          <th>Final Result</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>mdrahed321@gmail.com</td>
+            <td>Well Format</td>
+            <td>Webmail</td>
+            <td>Valid</td>
+            <td>Valid</td>
+            <td>Success</td>
+            <td>OK</td>
+          </tr>
+          <tr>
+            <td>mdrahed321@gmail.com</td>
+            <td>Well Format</td>
+            <td>Webmail</td>
+            <td>Valid</td>
+            <td>Valid</td>
+            <td>Success</td>
+            <td>OK</td>
+          </tr>
+          <tr>
+            <td>mdrahed321@gmail.com</td>
+            <td>Well Format</td>
+            <td>Webmail</td>
+            <td>Valid</td>
+            <td>Valid</td>
+            <td>Success</td>
+            <td>OK</td>
+          </tr>
+          <tr>
+            <td>mdrahed321@gmail.com</td>
+            <td>Well Format</td>
+            <td>Webmail</td>
+            <td>Valid</td>
+            <td>Valid</td>
+            <td>Success</td>
+            <td>OK</td>
+          </tr>
+          <tr>
+            <td>mdrahed321@gmail.com</td>
+            <td>Well Format</td>
+            <td>Webmail</td>
+            <td>Valid</td>
+            <td>Valid</td>
+            <td>Success</td>
+            <td>OK</td>
+          </tr>
+          <tr>
+            <td>mdrahed321@gmail.com</td>
+            <td>Well Format</td>
+            <td>Webmail</td>
+            <td>Valid</td>
+            <td>Valid</td>
+            <td>Success</td>
+            <td>OK</td>
+          </tr>
+          <tr>
+            <td>mdrahed321@gmail.com</td>
+            <td>Well Format</td>
+            <td>Webmail</td>
+            <td>Valid</td>
+            <td>Valid</td>
+            <td>Success</td>
+            <td>OK</td>
+          </tr>
+          <tr>
+            <td>mdrahed321@gmail.com</td>
+            <td>Well Format</td>
+            <td>Webmail</td>
+            <td>Valid</td>
+            <td>Valid</td>
+            <td>Success</td>
+            <td>OK</td>
+          </tr>
+          <tr>
+            <td>mdrahed321@gmail.com</td>
+            <td>Well Format</td>
+            <td>Webmail</td>
+            <td>Valid</td>
+            <td>Valid</td>
+            <td>Success</td>
+            <td>OK</td>
+          </tr>
+          <tr>
+            <td>mdrahed321@gmail.com</td>
+            <td>Well Format</td>
+            <td>Webmail</td>
+            <td>Valid</td>
+            <td>Valid</td>
+            <td>Success</td>
+            <td>OK</td>
+          </tr>
+
+        </tbody>
+        
+      </table>
+
+  </div>
+
+</body>
+
+</html>

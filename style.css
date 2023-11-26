@@ -76,25 +76,28 @@ nav h1 {
   margin-top: 1.5rem;
 }
 
-@media screen and (max-width: 650px){
-  nav{
+@media screen and (max-width: 650px) {
+  nav {
     width: 100%;
   }
-  .topbar{
+
+  .topbar {
     flex-direction: column;
   }
-  .menu ul li{
+
+  .menu ul li {
     padding: 0.6rem;
   }
+
   .menu ul li a {
     font-size: 1rem;
   }
 
-  .user_select{
+  .user_select {
     margin-top: 1.6rem;
   }
 
-  nav h1{
+  nav h1 {
     font-size: 2rem;
   }
 }
@@ -151,11 +154,11 @@ nav h1 {
   cursor: pointer;
 }
 
-.file_form{
+.file_form {
   width: 70%;
   margin: 0 auto;
   display: flex;
-  height: 50px;  
+  height: 50px;
   align-items: center;
   justify-content: flex-start;
   position: relative;
@@ -177,7 +180,7 @@ nav h1 {
   cursor: pointer;
 }
 
-.file_form > div {
+.file_form>div {
   display: flex;
   align-items: center;
   color: white;
@@ -196,41 +199,115 @@ nav h1 {
   margin-left: 1.5rem;
 }
 
-@media  screen and (max-width: 650px) {
-  .email_checker_form{
+@media screen and (max-width: 650px) {
+  .email_checker_form {
     width: 90%;
     margin-top: 2rem;
   }
+
   .email_checker_form>p {
     font-size: 1rem;
   }
 
-  .email_checker_form #mail_form{
+  .email_checker_form #mail_form {
     width: 100%;
     margin: 0.6rem auto;
   }
 
-  .file_form{
+  .file_form {
     width: 100%;
     margin-top: 1.5rem;
     height: 40px;
   }
+
   .file_form .djd {
     display: none;
   }
-  #checkEmail{
+
+  #checkEmail {
     font-size: 0.8rem;
     height: 40px;
   }
+
   .email_checker_form button {
     height: 40px;
   }
 }
 
+/* ------------------- lowest person checker---------------------*/
+
+.person_result {
+  width: 60%;
+  border-radius: 5px;
+  min-height: 100px;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 1rem;
+  box-shadow: -2px -2px 1px rgba(0, 0, 0, 0.1), 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+.person_result__heading {
+  width: 100%;
+  min-height: 100px;
+  border-bottom: 1px solid lightslategray;
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+  padding: 1rem;
+}
+
+.person_result__heading h2 {
+  font-weight: 300;
+  color: #434c5e;
+}
+
+.person_result__heading p {
+  font-family: 10px;
+  color: #434c5e;
+}
+
+.person_result__heading img {
+  width: 44px;
+}
+
+.person_result_table {
+  width: 100%;
+}
+
+.person_result_table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+@media screen and (max-width: 650px) {
+  .person_result {
+    width: 95%;
+    padding: 0.5rem;
+  }
+
+  .person_result__heading h2 {
+    font-weight: 300;
+    font-size: 1.2rem;
+  }
+  .person_result__heading img {
+    width: 30px;
+  }
+  .person_result__heading p {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #434c5e;
+  }
+  .person_result_table {
+    width: 100%;
+    font-size: 12px;
+    margin-top: 1.5rem;
+  }
+
+}
 
 /* ------------------- result box here---------------------*/
 
-.result_box{
+.result_box {
   width: 60%;
   margin: 2rem auto;
   padding: 2rem;
@@ -238,33 +315,40 @@ nav h1 {
   box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1), -2px -1px 1px rgba(0, 0, 0, 0.1);
 }
 
-.result_box .checked_detials{
+.result_box .checked_detials {
   width: 100%;
   border-collapse: collapse;
 }
-.result_box .checked_detials tr, td, th{
+
+.result_box .checked_detials tr,
+td,
+th {
   border: 1px solid gray;
   height: 40px;
   text-align: center;
 }
-.result_box .checked_detials td{
+
+.result_box .checked_detials td {
   font-size: 14px;
 }
 
-.result_box .checked_detials th{
+.result_box .checked_detials th {
   height: 60px;
 }
-.result_box .checked_detials tr td:nth-child(2){
-  width: 100px;
-}
-.result_box .checked_detials tr td:nth-child(3){
-  width: 100px;
-}
-.result_box .checked_detials tr td:nth-child(6){
+
+.result_box .checked_detials tr td:nth-child(2) {
   width: 100px;
 }
 
-.result_box_heading{
+.result_box .checked_detials tr td:nth-child(3) {
+  width: 100px;
+}
+
+.result_box .checked_detials tr td:nth-child(6) {
+  width: 100px;
+}
+
+.result_box_heading {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -272,11 +356,18 @@ nav h1 {
   padding: 0.5rem;
 }
 
-.download_btn{
-  margin-top: 1.5rem;
+.checked_detials {
+  margin-top: 2rem;
 }
 
-.download_btn button{
+.download_btn {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.download_btn button {
   padding: 0.8rem 1.5rem;
   font-size: 1rem;
   border: none;
@@ -299,7 +390,7 @@ nav h1 {
   row-gap: 1rem;
 }
 
-.result_overview > div {
+.result_overview>div {
   display: flex;
   align-items: center;
   width: 100%;
@@ -311,34 +402,38 @@ nav h1 {
   color: white;
 }
 
-.result_overview > div:first-child{
+.result_overview>div:first-child {
   background: RGB(12, 166, 120);
 }
 
-.result_overview > div:nth-child(2){
+.result_overview>div:nth-child(2) {
   background: RGB(64, 192, 87);
 }
-.result_overview > div:nth-child(3){
+
+.result_overview>div:nth-child(3) {
   background: #f03e3e;
 }
-.result_overview > div:nth-child(4){
+
+.result_overview>div:nth-child(4) {
   background: #f03e3e;
 }
-.result_overview > div:nth-child(5){
+
+.result_overview>div:nth-child(5) {
   background: #ee6363;
 }
-.result_overview > div:nth-child(6){
+
+.result_overview>div:nth-child(6) {
   background: #e8590c;
 }
 
 
 
-.select_view{
+.select_view {
   flex: 1;
   padding: 1rem;
 }
 
-.select_view select{
+.select_view select {
   width: 100%;
   padding: 0.5rem;
   border: none;
@@ -346,6 +441,10 @@ nav h1 {
   font-size: 1rem;
 }
 
+
+.result_textarea {
+  display: none;
+}
 
 @media screen and (max-width: 650px) {
   .select_view {
@@ -355,17 +454,40 @@ nav h1 {
     flex-direction: column;
   }
 
-  
-.result_overview > div{
-  width: 100%;
-}
+
+  .result_overview>div {
+    width: 100%;
+  }
+
   .result_box {
     width: 100%;
   }
-  .result_box_heading{
+
+  .result_box_heading {
     flex-direction: column;
   }
-  .checked_detials{
+
+  .checked_detials {
     display: none;
+  }
+
+  .result_textarea {
+    display: block;
+    width: 100%;
+    min-height: 200px;
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+
+  .result_textarea textarea {
+    width: 100%;
+    min-height: 200px;
+    max-height: 300px;
+    resize: none;
+    padding: 1rem;
+    font-size: 1rem;
+    outline-color: #5a06ef;
+    border-color: #5a06ef;
+    border-radius: 5px;
   }
 }

@@ -76,6 +76,29 @@ nav h1 {
   margin-top: 1.5rem;
 }
 
+@media screen and (max-width: 650px){
+  nav{
+    width: 100%;
+  }
+  .topbar{
+    flex-direction: column;
+  }
+  .menu ul li{
+    padding: 0.6rem;
+  }
+  .menu ul li a {
+    font-size: 1rem;
+  }
+
+  .user_select{
+    margin-top: 1.6rem;
+  }
+
+  nav h1{
+    font-size: 2rem;
+  }
+}
+
 /* ------------------- checker form here---------------------*/
 .email_checker_form {
   width: 60%;
@@ -173,11 +196,42 @@ nav h1 {
   margin-left: 1.5rem;
 }
 
+@media  screen and (max-width: 650px) {
+  .email_checker_form{
+    width: 90%;
+    margin-top: 2rem;
+  }
+  .email_checker_form>p {
+    font-size: 1rem;
+  }
+
+  .email_checker_form #mail_form{
+    width: 100%;
+    margin: 0.6rem auto;
+  }
+
+  .file_form{
+    width: 100%;
+    margin-top: 1.5rem;
+    height: 40px;
+  }
+  .file_form .djd {
+    display: none;
+  }
+  #checkEmail{
+    font-size: 0.8rem;
+    height: 40px;
+  }
+  .email_checker_form button {
+    height: 40px;
+  }
+}
+
 
 /* ------------------- result box here---------------------*/
 
 .result_box{
-  width: 50%;
+  width: 60%;
   margin: 2rem auto;
   padding: 2rem;
   min-height: 400px;
@@ -228,6 +282,13 @@ nav h1 {
   border: none;
   background: whitesmoke;
   cursor: pointer;
+  color: #5a06ef;
+}
+
+.download_btn button i {
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+  color: #5a06ef;
 }
 
 .result_overview {
@@ -283,4 +344,28 @@ nav h1 {
   border: none;
   box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1), -2px -1px 1px rgba(0, 0, 0, 0.1);
   font-size: 1rem;
+}
+
+
+@media screen and (max-width: 650px) {
+  .select_view {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  
+.result_overview > div{
+  width: 100%;
+}
+  .result_box {
+    width: 100%;
+  }
+  .result_box_heading{
+    flex-direction: column;
+  }
+  .checked_detials{
+    display: none;
+  }
 }

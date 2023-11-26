@@ -79,6 +79,7 @@ nav h1 {
 @media screen and (max-width: 650px) {
   nav {
     width: 100%;
+    padding-bottom: 2rem;
   }
 
   .topbar {

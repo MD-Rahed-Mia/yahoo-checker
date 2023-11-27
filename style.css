@@ -492,3 +492,142 @@ th {
     border-radius: 5px;
   }
 }
+
+/* ------------------- pricing starts here---------------------*/
+
+.pricing{
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.pricing_heading h1 {
+  color: #5a06ef;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 1rem auto;
+  border-bottom: 3px solid #5a06ef;
+  width: fit-content;
+}
+.pricing_heading p {
+  text-align: center;
+  color: #5a06ef;
+  font-size: 13px;
+}
+
+.pricing_cards{
+  width: 70%;
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+
+.pricing_card{
+  text-align: center;
+  width: 250px;
+  padding:1.5rem 0.5rem;
+  border-radius: 10px;
+  background: #333;
+  color: #fff;
+  border: none;
+  border: 5px solid #333;
+  transition: border 500ms ease;
+}
+
+.pricing_card:hover{
+  border: 5px solid #5a06ef;
+}
+.pricing_card h2{
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin: 5px 0;
+}
+.pricing_card .card_desc{
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.buy_now{
+  padding: 0.7rem 1.5rem;
+  background: #5a06ef;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 10px 0;
+  cursor: pointer;
+  border: none;
+  margin-top: 1rem;
+}
+.pricing_card_desc ul {
+  list-style-type: none;
+}
+
+.pricing_card_desc ul li{
+  text-align: left;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+.pricing_card_desc ul li span{
+  height: 20px;
+  width: 20px;
+  background: white;
+  border-radius: 50%;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+/* ------------------- faq starts here---------------------*/
+
+.faq_container{
+  width: 60%;
+  margin: 2rem auto;
+}
+.faq_container h1{
+  color: #5a06ef;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 1rem auto;
+  border-bottom: 3px solid #5a06ef;
+  width: fit-content;
+}
+
+.faq_box ul {
+  list-style-type: none;
+}
+
+.faq_box ul li{
+  width: 100%;
+  padding: 1.5rem;
+  background: lightgray;
+  margin-top: 1rem;
+  border-radius: 5px;
+  position: relative;
+  user-select: none;
+}
+
+.content{
+  margin-top: 1rem;
+  display: none;
+  font-size: 14px;
+  width: 80%;
+  border-top: 1px solid #555;
+  padding-top: 1rem;
+}
+
+.content.active{
+  display: block;
+}
+.plus_icon{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1rem;
+  color: #434c5e;
+}

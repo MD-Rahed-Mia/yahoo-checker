@@ -314,6 +314,7 @@ nav h1 {
   padding: 2rem;
   min-height: 400px;
   box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1), -2px -1px 1px rgba(0, 0, 0, 0.1);
+  display: none;
 }
 
 .result_box .checked_detials {
@@ -583,6 +584,18 @@ th {
   margin: 0 10px;
 }
 
+@media screen and (max-width: 650px) {
+  .pricing_cards{
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 2rem;
+  }
+  .pricing_heading{
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
 /* ------------------- faq starts here---------------------*/
 
 .faq_container{
@@ -626,8 +639,16 @@ th {
 }
 .plus_icon{
   position: absolute;
-  top: 50%;
+  top: 35px;
   transform: translateY(-50%);
   right: 1rem;
   color: #434c5e;
+}
+
+
+
+@media screen and (max-width: 650px) {
+  .faq_container{
+    width: 80%;
+  }
 }
